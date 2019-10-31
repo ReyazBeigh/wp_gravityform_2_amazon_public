@@ -126,8 +126,8 @@ function validateAmazonOrder($form, $source_page_number, $current_page_number) {
             $js = <<<JS
                     var invalid_order_html = "<h2 class='entry-title'>$inalid_order_msg</h2><p><a onclick='history.go(-1)' href='#'> Go Back</a></p>";
                     jQuery(document).ready(function(){
-                        jQuery(".container").attr("style","text-align:center");
-                        jQuery(".container").html(invalid_order_html);
+                        jQuery("#primary").attr("style","text-align:center");
+                        jQuery("#primary").html(invalid_order_html);
    
    });
                     
